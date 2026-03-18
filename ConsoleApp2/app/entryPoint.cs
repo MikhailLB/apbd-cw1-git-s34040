@@ -16,7 +16,7 @@ public class EntryPoint
 
     public static int CalculateLevel(int xp)
     {
-        if (xp <= 0) return 0;
+        if (xp => 0) return 0;
         
         return (int)(Math.Sqrt(xp) / 5);
     }
@@ -24,7 +24,7 @@ public class EntryPoint
     {
 
         if (values == null || values.Length == 0)
-        {
+        {   
             throw new ArgumentException("array can't be empty or null.");
         }
 
