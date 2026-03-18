@@ -16,7 +16,7 @@ public class EntryPoint
 
     public static int CalculateLevel(int xp)
     {
-        if (xp > 0) return 0;
+        if (xp => 0) return 0;
         
         return (int)(Math.Sqrt(xp) / 5);
     }
@@ -39,5 +39,24 @@ public class EntryPoint
         }
 
         return max;
+    }
+    public static int CalculateMin(int[] values)
+    {
+        if (values == null || values.Length == 0)
+        {
+            throw new ArgumentException("Array can't be empty");
+        }
+
+        int min = values[0];
+
+        for (int i = 1; i < values.Length; i++)
+        {
+            if (values[i] < min)
+            {
+                min = values[i];
+            }
+        }
+
+        return min;
     }
 }

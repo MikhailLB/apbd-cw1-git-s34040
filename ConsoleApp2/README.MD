@@ -1,4 +1,5 @@
-### Merge Type Explanation
-The merge was **not fast-forward** because the history of `main` and `feature-max` branches had **diverged**. 
-
-Since a new commit was added directly to `main` after the `feature-max` branch was created, the branches no longer shared a direct linear path. Git had to perform a **three-way merge** and create a specific **merge commit** to integrate the changes from both independent lines of development.
+* **Merge**: Resulted in a "diamond" shape history. It preserved the original 
+context of the branch but added a dedicated merge commit.
+* **Rebase**: Produced a **perfectly linear history**. By "replaying" 
+`feature-min` commits on top of the latest `main`, we avoided 
+the merge commit and made the logs much cleaner and easier to read.
