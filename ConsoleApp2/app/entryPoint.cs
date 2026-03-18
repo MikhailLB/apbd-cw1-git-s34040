@@ -44,7 +44,7 @@ public class EntryPoint
     {
         if (values == null || values.Length == 0)
         {
-            throw new ArgumentException("Array can't be empty or null.");
+            throw new ArgumentException("Array can't be empty");
         }
 
         int min = values[0];
