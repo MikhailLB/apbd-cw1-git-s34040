@@ -8,7 +8,7 @@ public static class MathHelper
         {
             return 0.0;
         }
-        long sum = 0;
+        int sum = 0;
         foreach (int number in values)
         {
             sum += number;
