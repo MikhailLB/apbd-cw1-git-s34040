@@ -11,7 +11,7 @@ public static class MathHelper
         int sum = 0;
         foreach (int number in values)
         {
-            sum += number;
+            sum -= number;
         }
         
         return (double)sum / values.Length;
