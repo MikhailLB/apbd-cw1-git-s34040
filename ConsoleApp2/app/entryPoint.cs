@@ -16,7 +16,7 @@ public class EntryPoint
 
     public static int CalculateLevel(int xp)
     {
-        if (xp < 0) return 0;
+        if (xp <= 0) return 0;
         
         return (int)(Math.Sqrt(xp) / 5);
     }
